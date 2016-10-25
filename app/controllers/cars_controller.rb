@@ -3,6 +3,7 @@ class CarsController < ApplicationController
     end
     
     def list
+        @cars = Car.all
     end
     
     def show
