@@ -1,8 +1,9 @@
 class CarsController < ApplicationController
-    def search
+    def home
     end
     
     def list
+        @query = params[:query]
         @cars = Car.all
     end
     
