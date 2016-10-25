@@ -3,7 +3,6 @@ class CarsController < ApplicationController
     end
     
     def list
-        @query = params[:query]
         @cars = Car.all
     end
     
