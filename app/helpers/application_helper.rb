@@ -10,7 +10,7 @@ module ApplicationHelper
     end
     
     def still_made(year)
-        if year == Time.now.year
+        if year == Time.zone.now.year
             ' '
         else
             year
