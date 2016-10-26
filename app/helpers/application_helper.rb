@@ -10,7 +10,7 @@ module ApplicationHelper
     end
     
     def still_made(year)
-        if year == 2016
+        if year == Time.now.year
             ' '
         else
             year
