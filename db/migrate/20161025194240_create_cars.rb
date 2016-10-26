@@ -3,7 +3,8 @@ class CreateCars < ActiveRecord::Migration
     create_table :cars do |t|
       t.string :name
       t.string :manufacturer
-
+      t.integer :production_started
+      t.integer :production_ended
       t.timestamps null: false
     end
   end

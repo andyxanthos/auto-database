@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(version: 20161025194240) do
   create_table "cars", force: :cascade do |t|
     t.string   "name"
     t.string   "manufacturer"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "production_started"
+    t.integer  "production_ended"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
 end
