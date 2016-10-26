@@ -1,4 +1,8 @@
 <% provide(:title, "#{@car.manufacturer} #{@car.name}") %>
-<h1><%= @car.manufacturer %> <%= @car.name %></h1>
-<h3><%= @car.production_started %>-<%= @car.production_ended %></h3>
-
+<div class="row">
+    <div class="col-sm-4 basic-info">
+        <h1><%= @car.manufacturer %> <%= @car.name %></h1>
+        <h3>In production: <%= @car.production_started %>-<%= still_made(@car.production_ended) %></h3>
+        <h3>Country of origin: <%= @car.country %></h3>
+    </div>    
+</div>

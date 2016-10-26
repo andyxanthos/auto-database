@@ -8,4 +8,13 @@ module ApplicationHelper
           page_title + " on " + base_title
         end
     end
+    
+    def still_made(year)
+        if year == 2016
+            ' '
+        else
+            year
+        end    
+    end        
+                
 end
