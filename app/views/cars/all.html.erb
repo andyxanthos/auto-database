@@ -1,0 +1,8 @@
+<% provide(:title, 'Listing All Cars') %>
+<% @cars.each do |car| %>
+<div class="row">
+    <div class="col-sm-12 car-list-item">
+        <%= link_to "#{car.manufacturer} #{car.name}", show_path(car.id), class: 'list-item-link' %>
+    </div>   
+</div>    
+<% end %>    

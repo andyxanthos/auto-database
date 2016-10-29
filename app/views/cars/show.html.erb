@@ -1,8 +1,15 @@
 <% provide(:title, "#{@car.manufacturer} #{@car.name}") %>
 <div class="row">
-    <div class="col-sm-4 basic-info">
-        <h1><%= @car.manufacturer %> <%= @car.name %></h1>
-        <h3>In production: <%= @car.production_started %>-<%= still_made(@car.production_ended) %></h3>
-        <h3>Country of origin: <%= @car.country %></h3>
-    </div>    
+    <div class="col-sm-4">
+        <div class="basic-info">
+            <h1><%= @car.manufacturer %> <%= @car.name %></h1>
+            <h3>In production: <%= @car.production_started %>-<%= still_made(@car.production_ended) %></h3>
+            <h3>Country of origin: <%= @car.country %></h3>
+        </div>
+    </div>
+    
+    <div class="col-sm-8">
+        <%= image_tag(@car.image, class: 'img img-responsive') %>
+    </div>
 </div>
+
