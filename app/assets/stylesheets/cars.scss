@@ -39,3 +39,11 @@ h1 {
 .list-item-link {
     font-size: 2em;
 }
+
+.navbar-inverse {
+    .navbar-brand {
+        color: #FFF;
+        font-size: 1.6em;
+    }
+    border-radius: none;
+}
