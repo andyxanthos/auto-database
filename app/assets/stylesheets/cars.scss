@@ -37,13 +37,21 @@ h1 {
 }
 
 .list-item-link {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .navbar-inverse {
     .navbar-brand {
         color: #FFF;
         font-size: 1.6em;
+        &:hover {
+            color: darken(#FFF, 15%);
+        }
     }
     border-radius: none;
+}
+
+.car-summary {
+    padding: 5px;
+    font-size: 16pt;
 }

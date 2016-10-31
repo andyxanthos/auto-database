@@ -12,5 +12,5 @@ class CarsController < ApplicationController
     
     def all
         @cars = Car.all
-    end    
+    end
 end
