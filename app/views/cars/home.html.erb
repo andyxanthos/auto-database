@@ -1,5 +1,10 @@
 <% provide(:title, 'Search') %>
 <div class="col-md-12 search-area">
-    <h1>Search Auto-Database</h1>
-    <h3>Search by make or model</h3>
+    <h1>Auto-Database</h1>
+    
+    <%= form_tag( results_path, method: "get" ) do %>
+    <%= label_tag(:q, "Search by make or model:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+<% end %>
 </div>
