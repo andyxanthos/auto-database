@@ -3,10 +3,10 @@ class CarsController < ApplicationController
     end
      
     def results
-        if params[:q]    
-            @results = Car.search(params[:q]).order('created_at DESC')
-        elsif params[:q] == nil
+        if params[:q] == ''
             redirect_to '/'
+        elsif params[:q]    
+            @results = Car.search(params[:q]).order('created_at DESC')
         else
             redirect_to '/'
         end

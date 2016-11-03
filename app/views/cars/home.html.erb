@@ -3,7 +3,7 @@
     <h1>Auto-Database</h1>
     
     <%= form_tag( results_path, method: "get" ) do %>
-    <%= text_field_tag :q, 'Search by make or model', class: 'search-bar' %>
+    <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar' %>
     <%= submit_tag("Search") %>
 <% end %>
 </div>
