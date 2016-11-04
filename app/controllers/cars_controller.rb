@@ -6,7 +6,7 @@ class CarsController < ApplicationController
         if params[:q] == ''
             redirect_to '/'
         elsif params[:q]    
-            @results = Car.search(params[:q]).order('created_at DESC')
+            @results = Car.search(params[:q]).order('name DESC')
         else
             redirect_to '/'
         end
