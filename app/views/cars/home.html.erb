@@ -10,12 +10,26 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-6 subscription-box">
-        <h3>Sign up for our newsletter!</h3>
-        <%= form_tag(subscribe_path, method: "get") do  %>
-          <%= label_tag(:email, "Email:") %>
-          <%= text_field_tag(:email) %>
-          <%= submit_tag("Subscribe!") %>
-        <% end %>
+    <div class="col-md-4 subscription-box">
+        <center>
+            <h3>Sign up for our newsletter!</h3>
+            <%= form_tag(subscribe_path, method: "get") do  %>
+              <%= text_field_tag :email, nil, placeholder: 'Email Address', class: 'subscribe-bar' %>
+              <%= submit_tag("Subscribe!") %>
+            <% end %>
+            <p>Don't worry, we're allergic to spam.</p>
+        </center>
     </div>
+    <!-- DEVELOPMENT WARNING // REMOVE BEFORE PRODUCTION -->
+    <div class="col-md-8">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                Auto-Database is in development:
+            </div>
+            <div class="panel-body">
+                We're still working on implementing all the features we have in mind. Please be patient with us!
+                Found an error? Please <%= link_to 'contact us', contact_path %> with as many details as possible. Thank you.
+            </div>
+        </div>
+    </div>    
 </div>
