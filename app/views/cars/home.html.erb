@@ -1,9 +1,21 @@
 <% provide(:title, 'Search') %>
-<div class="col-md-12 search-area">
-    <h1>Auto-Database</h1>
-    
+<div class="row">
+    <div class="col-md-12 search-area">
+        <h1>Auto-Database</h1>
+        
     <%= form_tag( results_path, method: "get" ) do %>
-    <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar' %>
-    <%= submit_tag("Search") %>
-<% end %>
+        <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar' %>
+        <%= submit_tag("Search") %>
+    <% end %>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 subscription-box">
+        <h3>Sign up for our newsletter!</h3>
+        <%= form_tag(subscribe_path, method: "get") do  %>
+          <%= label_tag(:email, "Email:") %>
+          <%= text_field_tag(:email) %>
+          <%= submit_tag("Subscribe!") %>
+        <% end %>
+    </div>
 </div>
