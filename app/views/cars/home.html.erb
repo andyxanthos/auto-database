@@ -3,9 +3,11 @@
     <div class="col-md-12 search-area">
         <h1>Auto-Database</h1>
         
-    <%= form_tag( results_path, method: "get" ) do %>
-        <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar' %>
-        <%= submit_tag("Search") %>
+    <%= form_tag( results_path, method: "get", class: 'form-inline' ) do %>
+        <div class="form-group">
+        <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar form-control' %>
+        <%= submit_tag "Search", class: 'btn btn-default' %>
+        </div>
     <% end %>
     </div>
 </div>
@@ -14,10 +16,12 @@
         <center>
             <h3>Sign up for our newsletter!</h3>
             <%= form_tag(subscribe_path, method: "get") do  %>
-              <%= text_field_tag :email, nil, placeholder: 'Email Address', class: 'subscribe-bar' %>
-              <%= submit_tag("Subscribe!") %>
+            <div class="form-group">
+              <%= text_field_tag :email, nil, placeholder: 'Email Address', class: 'subscribe-bar form-control' %>
+              <%= submit_tag "Subscribe!", class: 'btn btn-success' %>
+            </div>  
             <% end %>
-            <p>Don't worry, we're allergic to spam.</p>
+            <p>Don't worry, we don't spam.</p>
         </center>
     </div>
     <!-- DEVELOPMENT WARNING // REMOVE BEFORE PRODUCTION -->

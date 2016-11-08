@@ -14,7 +14,9 @@
  *= require_self
  */
 
-
+.search-bar {
+    width: 300px;
+}
 
 .row {
     margin-top: 15px;
