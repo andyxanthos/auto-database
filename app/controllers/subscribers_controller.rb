@@ -1,6 +1,6 @@
 class SubscribersController < ApplicationController
   def create
-    @newsub = Subscriber.create({ email: params[:email]})
+    @newsub = Subscriber.find_or_create_by({ email: params[:email]})
     if @newsub.save
       redirect_to '/'
     else
