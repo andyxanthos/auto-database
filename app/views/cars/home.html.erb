@@ -6,7 +6,7 @@
     <%= form_tag( results_path, method: "get", class: 'form-inline' ) do %>
         <div class="form-group">
         <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar form-control' %>
-        <%= submit_tag "Search", class: 'btn btn-default' %>
+        <%= submit_tag "Search", class: 'btn btn-primary' %>
         </div>
     <% end %>
     </div>
@@ -32,7 +32,8 @@
             </div>
             <div class="panel-body">
                 We're still working on implementing all the features we have in mind. Please be patient with us!
-                Found an error? Please <%= link_to 'contact us', contact_path %> with as many details as possible. Thank you.
+                If you come across an error, please <%= link_to 'contact us', contact_path %> with as many details 
+                as possible. Thanks.
             </div>
         </div>
         <!-- END DEVELOPEMENT WARNING -->
