@@ -41,6 +41,10 @@ h1 {
 }
 
 .navbar-inverse {
+    background-color:#337AB7;
+    border: 1px solid darken(#337AB7, 10%);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    border-radius: none;
     .navbar-brand {
         color: #FFF;
         font-size: 1.6em;
@@ -48,7 +52,13 @@ h1 {
             color: darken(#FFF, 15%);
         }
     }
-    border-radius: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+    &:hover {
+        color: darken(#FFF, 15%);
+    }
 }
 
 .car-summary {
@@ -63,11 +73,27 @@ h1 {
 /* homepage subscription box */
 
 .subscription-box {
+    width: 100%;
+    padding: 20px;
     background-color: #D3D3D3;
 }
 
 .subscribe-bar {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* Recently Added list styling */
+
+.recently-added {
+   @extend .subscription-box;
+   margin-top: 10px;
+   &-item {
+       font-size: 1.5em;
+   }
+   h3 {
+       margin-top: -5px;
+       margin-bottom: 10px;
+   }
 }
 

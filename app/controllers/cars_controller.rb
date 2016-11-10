@@ -1,5 +1,6 @@
 class CarsController < ApplicationController
     def home
+        @recents = Car.limit(5).order('created_at DESC')
     end
      
     def results
