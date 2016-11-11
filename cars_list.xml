@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars type="array">
+  <car>
+    <id type="integer">1</id>
+    <name>Miata</name>
+    <manufacturer>Mazda</manufacturer>
+    <production-started type="integer">1990</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-25T23:52:58Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:30:47Z</updated-at>
+    <country>Japan</country>
+    <image>nd_miata.jpg</image>
+    <full-name>Mazda Miata</full-name>
+  </car>
+  <car>
+    <id type="integer">2</id>
+    <name>911</name>
+    <manufacturer>Porsche</manufacturer>
+    <production-started type="integer">1963</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-25T23:58:18Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:31:14Z</updated-at>
+    <country>Germany</country>
+    <image>porsche_911.jpg</image>
+    <full-name>Porsche 911</full-name>
+  </car>
+  <car>
+    <id type="integer">3</id>
+    <name>El Camino</name>
+    <manufacturer>Chevrolet</manufacturer>
+    <production-started type="integer">1959</production-started>
+    <production-ended type="integer">1989</production-ended>
+    <created-at type="dateTime">2016-10-26T00:39:32Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:32:14Z</updated-at>
+    <country>United States</country>
+    <image>el_camino.jpg</image>
+    <full-name>Chevrolet El Camino</full-name>
+  </car>
+  <car>
+    <id type="integer">4</id>
+    <name>M3</name>
+    <manufacturer>BMW</manufacturer>
+    <production-started type="integer">1985</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-29T14:53:25Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:32:40Z</updated-at>
+    <country>Germany</country>
+    <image>BMW_M3.jpg</image>
+    <full-name>BMW M3</full-name>
+  </car>
+  <car>
+    <id type="integer">5</id>
+    <name>M5</name>
+    <manufacturer>BMW</manufacturer>
+    <production-started type="integer">1985</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-29T14:55:11Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:33:08Z</updated-at>
+    <country>Germany</country>
+    <image>BMW_M5.jpg</image>
+    <full-name>BMW M5</full-name>
+  </car>
+  <car>
+    <id type="integer">6</id>
+    <name>GTI</name>
+    <manufacturer>Volkswagen</manufacturer>
+    <production-started type="integer">1974</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-29T14:56:50Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:34:05Z</updated-at>
+    <country>Germany</country>
+    <image>MK7_GTI.jpg</image>
+    <full-name>Volkswagen GTI</full-name>
+  </car>
+  <car>
+    <id type="integer">7</id>
+    <name>Wrangler</name>
+    <manufacturer>Jeep</manufacturer>
+    <production-started type="integer">1986</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-29T15:16:28Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:34:27Z</updated-at>
+    <country>USA</country>
+    <image>Jeep_Wrangler.jpg</image>
+    <full-name>Jeep Wrangler</full-name>
+  </car>
+  <car>
+    <id type="integer">8</id>
+    <name>Macan</name>
+    <manufacturer>Porsche</manufacturer>
+    <production-started type="integer">2015</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-10-30T17:22:08Z</created-at>
+    <updated-at type="dateTime">2016-11-02T21:36:19Z</updated-at>
+    <country>Germany</country>
+    <image>macan.jpg</image>
+    <full-name>Porsche Macan</full-name>
+  </car>
+  <car>
+    <id type="integer">9</id>
+    <name>Mustang</name>
+    <manufacturer>Ford</manufacturer>
+    <production-started type="integer">1965</production-started>
+    <production-ended type="integer">2016</production-ended>
+    <created-at type="dateTime">2016-11-10T16:34:52Z</created-at>
+    <updated-at type="dateTime">2016-11-10T16:34:52Z</updated-at>
+    <country>USA</country>
+    <image>ford_mustang.jpg</image>
+    <full-name>Ford Mustang</full-name>
+  </car>
+</cars>
