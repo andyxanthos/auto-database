@@ -72,6 +72,7 @@ h1 {
 /* homepage subscription box */
 
 .subscription-box {
+    border-radius: 5px;
     width: 100%;
     padding: 20px;
     background-color: #D3D3D3;
@@ -88,8 +89,16 @@ h1 {
    @extend .subscription-box;
    margin-top: 10px;
    margin-bottom: 25px;
+   &-list {
+       margin-top: 15px;
+       margin-bottom: -10px;
+   }
    &-item {
-       font-size: 1.5em;
+       list-style-type: none;
+       font-size: 1.8em;
+       .btn {
+           width: 90%;
+       }
    }
    h3 {
        margin-top: 0px;

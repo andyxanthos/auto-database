@@ -1,7 +1,7 @@
 <% provide(:title, 'Search') %>
 <div class="row">
     <div class="col-md-12 search-area">
-        <%= image_tag 'adb-logo.png' %>
+        <center><%= image_tag 'adb-logo.png', class: 'img img-responsive' %></center>
         
     <%= form_tag( results_path, method: "get", class: 'form-inline' ) do %>
         <div class="form-group">
@@ -28,9 +28,9 @@
         
         <div class="recently-added">
             <center><h3>Recently Added</h3></center>
-            <ul>
+            <ul class="recently-added-list">
                 <% @recents.each do |recent| %>
-                <li class="recently-added-item"><%= link_to "#{recent.manufacturer.to_s} #{recent.name.to_s}", show_path(recent.id)%></li> <br />
+                <li class="recently-added-item"><%= link_to "#{recent.manufacturer.to_s} #{recent.name.to_s}", show_path(recent.id), class: 'btn btn-default btn-lg'%></li> <br />
                 <% end %>
             </ul>
         </div>
