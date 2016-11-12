@@ -1,18 +1,18 @@
 <% provide(:title, 'Search') %>
 <div class="row">
-    <div class="col-md-12 search-area">
+    <div class="col-sm-12 search-area">
         <center><%= image_tag 'adb-logo.png', class: 'img img-responsive' %></center>
         
     <%= form_tag( results_path, method: "get", class: 'form-inline' ) do %>
         <div class="form-group">
-        <%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar form-control' %>
+        <center><%= text_field_tag :q, nil, placeholder: 'Search by make or model', class: 'search-bar form-control' %></center>
         <%= submit_tag "Search", class: 'btn btn-primary' %>
         </div>
     <% end %>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-4">
         <div class="subscription-box">
             <center>
                 <h3>Sign up for our newsletter!</h3>
@@ -35,7 +35,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-sm-8">
         <!-- DEVELOPMENT WARNING // REMOVE BEFORE PRODUCTION -->
         <div class="panel panel-danger">
             <div class="panel-heading">

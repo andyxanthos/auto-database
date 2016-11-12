@@ -18,8 +18,8 @@
 }
 
 .search-area {
-    h1 {
-        font-weight: 400;
+    .btn {
+        margin-top: 5px;
     }
     text-align: center;
     padding-bottom: 20px;
@@ -66,6 +66,9 @@ h1 {
 }
 
 .search-bar {
+    @media (max-width: 460px) {
+        width: 275px !important;
+    }
     width: 450px !important;
 }
 
@@ -83,7 +86,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Recently Added list styling */
+/* Recently Added list */
 
 .recently-added {
    @extend .subscription-box;
@@ -97,6 +100,10 @@ h1 {
        list-style-type: none;
        font-size: 1.8em;
        .btn {
+           @media (max-width: 1000px) and (min-width: 768px) {
+               width: auto;
+               margin-left: -20px;
+           }
            width: 90%;
        }
    }
@@ -106,3 +113,14 @@ h1 {
    }
 }
 
+/* Footer */
+
+.footer {
+    background-color: #D3D3D3;
+    height: 150px;
+    border-top: 1px solid #337AB7;
+    &-content {
+      margin-left: 10px;
+      margin-top: 25px;
+    }
+}
